@@ -79,7 +79,7 @@ function Cart({ isOpen, onClose, cartItems, onUpdateQuantity, onRemove }) {
                     </div>
                     <p className="text-xs text-orange-500">{item.category}</p>
                     <p className="font-black text-red-700">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      {item.selectedSize ? `$` + item.selectedSize : ""}
                     </p>
                   </div>
 

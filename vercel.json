@@ -9,9 +9,6 @@
   ],
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "env": {
-    "REACT_APP_API_URL": "@REACT_APP_API_URL"
-  },
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ]

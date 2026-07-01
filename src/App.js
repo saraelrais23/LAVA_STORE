@@ -4,7 +4,7 @@ import Header from "./component/Header/Header";
 import Hero from "./component/HeroSection/Hero";
 import NavBar from "./component/NavBar/NavBar";
 import Products from "./component/Products/Products";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Cart from "./component/Cart/Cart";
 import Fav from "./component/Cart/Fav";
 import SingleProduct from "./component/ProductDetails/SingleProduct";
@@ -122,7 +122,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("fav", JSON.stringify(favItems));
   }, [favItems]);
-  const location = useLocation().pathname == "/login";
+  const location = useLocation().pathname === "/login";
   return (
     <div className="relative min-h-screen bg-white">
       {/* Persistent Components (Visible on all pages) */}

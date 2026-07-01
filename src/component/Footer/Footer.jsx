@@ -1,8 +1,9 @@
 import React from 'react';
-import { Share2, Camera, X , Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { FaFacebook ,FaInstagram,FaTwitter } from "react-icons/fa";
-function Footer (){
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+
+function Footer() {
   return (
 <footer className="bg-gradient-to-b from-[#5e2011] to-[#140C0A] text-orange-200/80 pt-16 pb-8 border-t border-amber-950/30">      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
@@ -16,13 +17,13 @@ function Footer (){
               Elevating your lifestyle with curated premium goods. We blend style, quality, and sustainability into every piece we drop.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="p-2 bg-red-920 rounded-lg hover:text-white hover:bg-red-600 transition-all">
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="p-2 bg-red-920 rounded-lg hover:text-white hover:bg-red-600 transition-all">
                 <FaInstagram className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 bg-red-920 rounded-lg hover:text-white hover:bg-red-600 transition-all">
+              <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="p-2 bg-red-920 rounded-lg hover:text-white hover:bg-red-600 transition-all">
                 <FaTwitter className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 bg-red-920 rounded-lg hover:text-white hover:bg-red-600 transition-all">
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="p-2 bg-red-920 rounded-lg hover:text-white hover:bg-red-600 transition-all">
                 <FaFacebook className="h-6 w-6"/>
               </a>
             </div>
@@ -80,9 +81,9 @@ function Footer (){
         <div className="pt-8 border-t border-orange-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-orange-200/80 font-medium">
           <p>© 2026 LAVASTORE Studio. Built with Passion.</p>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookies</a>
+            <a href="/" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/" className="hover:text-white transition-colors">Cookies</a>
           </div>
         </div>
       </div>

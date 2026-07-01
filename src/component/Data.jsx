@@ -275,7 +275,6 @@ const orderHistory = [
     ExpectedDate: "May 18 - May 20",
     payment: "Cash",
   },
-  ,
   {
     id: "VB-985110",
     date: "Sep 28, 2026",
@@ -327,7 +326,28 @@ const orderHistory = [
     ExpectedDate: "May 18 - May 20",
     payment: "Cash",
   },
-  ,
+  {
+    id: "VB-9850",
+    date: "Sep 28, 2026",
+    status: "Cancelled",
+    items: [
+      {
+        itemCount: 1,
+        itemName: "Footwear",
+        itemPrice: 45.0,
+        itemImage:
+          "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=1000",
+      },
+    ],
+    total: 45.99,
+    itemsQty: 1,
+    currentStep: -1, // 0, 1, 2, 3
+    address: "33 street building 1",
+    fullName: "Emmy John",
+    city: "London",
+    ExpectedDate: "May 18 - May 20",
+    payment: "Cash",
+  },
   {
     id: "VB-96352",
     status: "Confirmed", // Options: Confirmed,Processing, In Transit, Delivered
